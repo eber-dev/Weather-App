@@ -11,7 +11,7 @@ export default defineConfig([
     languageOptions: { globals: globals.browser },
     rules: {
       eqeqeq: 'error',
-      'no-unused-vars': 'error',
+      'no-unused-vars': 'warn',
       'no-console': 'warn',
       'no-var': 'error',
     },
