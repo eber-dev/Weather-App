@@ -13,6 +13,7 @@ export default defineConfig([
       eqeqeq: 'error',
       'no-unused-vars': 'error',
       'no-console': 'warn',
+      'no-var': 'error',
     },
   },
   eslintConfigPrettier,
