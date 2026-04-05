@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    height: 6rem;
+}
+
+.containertitulo {
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+    gap: 1rem;
+    margin-left: 15%;
+}
+
+.containertitulo > img {
+    height: 5rem;
+}
+
+.containertitulo > h1 {
+    font-size: 2rem;
+}
+
+.searchcontainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    margin-right: 15%;
+}
+
+.pie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+.pie > p {
+    font-size: 1.2rem;
+}
