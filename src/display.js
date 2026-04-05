@@ -62,10 +62,10 @@ function climaparte1() {
     datogeneral.classList.add('datogeneral');
     const datosclima = document.createElement('div');
     datosclima.classList.add('datosclima');
-    const grados = document.createElement('h1');
-    grados.classList.add('grados');
     const estado = document.createElement('h2');
     estado.classList.add('estado');
+    const grados = document.createElement('h1');
+    grados.classList.add('grados');
     const sensacion = document.createElement('p');
     sensacion.classList.add('sensacion');
     const humedad = document.createElement('p');
@@ -82,8 +82,8 @@ function climaparte1() {
     titular.appendChild(lugar);
     parte1.appendChild(datogeneral);
     datogeneral.appendChild(datosclima);
-    datosclima.appendChild(grados);
     datosclima.appendChild(estado);
+    datosclima.appendChild(grados);
     datosclima.appendChild(sensacion);
     datosclima.appendChild(humedad);
     datosclima.appendChild(viento);
