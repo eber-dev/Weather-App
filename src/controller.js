@@ -29,4 +29,45 @@ async function llenargeneral(clima) {
     } else {
         indice.textContent = 'Extremo';
     }
+
+    const imagenclima = document.querySelector('.imagenclima');
+    let cambioimages = imagenclima.currentConditions.icon;
+
+    switch (cambioimages) {
+        case 'clear-day':
+            imagenclima.src = await cargarIcono('sunny');
+            break;
+
+        case 'clear-night':
+            imagenclima.src = await cargarIcono('nightlight');
+            break;
+
+        case 'partly-cloudy-day':
+            imagenclima.src = await cargarIcono('partly_cloudy_day');
+            break;
+
+        case 'partly-cloudy-night':
+            imagenclima.src = await cargarIcono('wb_twilight');
+            break;
+
+        case 'cloudy':
+            imagenclima.src = await cargarIcono('cloud');
+            break;
+
+        case 'rain':
+            imagenclima.src = await cargarIcono('rainy');
+            break;
+
+        case 'snow':
+            imagenclima.src = await cargarIcono('ac_unit');
+            break;
+
+        case 'wind':
+            imagenclima.src = await cargarIcono('air');
+            break;
+
+        case 'fog':
+            imagenclima.src = await cargarIcono('foggy');
+            break;
+    }
 }
