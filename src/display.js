@@ -52,20 +52,34 @@ async function seccion2() {
 function climaparte1() {
     const parte1 = document.createElement('div');
     parte1.classList.add('parte1');
-    const titular1 = document.createElement('h1');
+    const titular = document.createElement('div');
+    titular.classList.add('titular');
+    const iconobusqueda = document.createElement('img');
+    iconobusqueda.classList.add('iconobusqueda');
+    const lugar = document.createElement('h1');
+    lugar.classList.add('lugar');
     const datogeneral = document.createElement('div');
     datogeneral.classList.add('datogeneral');
     const datosclima = document.createElement('div');
     datosclima.classList.add('datosclima');
     const grados = document.createElement('h1');
+    grados.classList.add('grados');
     const estado = document.createElement('h2');
+    estado.classList.add('estado');
     const sensacion = document.createElement('p');
+    sensacion.classList.add('sensacion');
     const humedad = document.createElement('p');
+    humedad.classList.add('humedad');
     const viento = document.createElement('p');
+    viento.classList.add('viento');
     const indice = document.createElement('p');
+    indice.classList.add('indice');
     const imagenclima = document.createElement('img');
+    imagenclima.classList.add('imagenclima');
 
-    parte1.appendChild(titular1);
+    parte1.appendChild(titular);
+    titular.appendChild(iconobusqueda);
+    titular.appendChild(lugar);
     parte1.appendChild(datogeneral);
     datogeneral.appendChild(datosclima);
     datosclima.appendChild(grados);
