@@ -35,7 +35,7 @@ export async function llenargeneral(clima) {
     }
 
     const imagenclima = document.querySelector('.imagenclima');
-    let cambioimages = imagenclima.currentConditions.icon;
+    let cambioimages = clima.currentConditions.icon;
 
     cambiarimagenes(imagenclima, cambioimages);
 }
