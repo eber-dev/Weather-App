@@ -42,11 +42,9 @@ async function seccion2() {
 
     const parte1 = climaparte1();
     const parte2 = climaparte2();
-    const parte3 = climaparte3();
 
     app.appendChild(parte1);
     app.appendChild(parte2);
-    app.appendChild(parte3);
 }
 
 function climaparte1() {
@@ -114,29 +112,6 @@ function climaparte2() {
     parte2.appendChild(dias);
 
     return parte2;
-}
-
-function climaparte3() {
-    const parte3 = document.createElement('div');
-    parte3.classList.add('parte3');
-    const titular3 = document.createElement('h2');
-    titular3.classList.add('.titular3');
-    titular3.textContent = 'Pronostico por Horas';
-    const horas = document.createElement('div');
-    horas.classList.add('horas');
-
-    for (let i = 1; i <= 24; i++) {
-        const reloj = document.createElement('div');
-        reloj.classList.add('reloj');
-        reloj.dataset.hora = `Hora${i}`;
-
-        horas.appendChild(reloj);
-    }
-
-    parte3.appendChild(titular3);
-    parte3.appendChild(horas);
-
-    return parte3;
 }
 
 function seccion3() {
