@@ -5,10 +5,10 @@ export async function cargarIcono(nombre) {
     return modulo.default;
 }
 
-export function loadContainer() {
-    seccion1();
-    seccion2();
-    seccion3();
+export async function loadContainer() {
+    await seccion1();
+    await seccion2();
+    await seccion3();
 }
 
 async function seccion1() {
@@ -22,7 +22,11 @@ async function seccion1() {
     const searchcontainer = document.createElement('div');
     searchcontainer.classList.add('searchcontainer');
     const input = document.createElement('input');
+    input.id = 'entrada';
+    input.type = 'text';
+    input.placeholder = 'Cuidad a consultar';
     const buscar = document.createElement('button');
+    buscar.classList.add('busqueda');
     const buscarimagen = document.createElement('img');
     buscarimagen.src = await cargarIcono('search');
 
