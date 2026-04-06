@@ -2,7 +2,7 @@ import { cargarIcono } from './display.js';
 
 export async function llenargeneral(clima) {
     const iconobusqueda = document.querySelector('.iconobusqueda');
-    iconobusqueda.src = await cargarIcono('search');
+    iconobusqueda.src = await cargarIcono('location_on');
     const lugar = document.querySelector('.lugar');
     const lugarcapitalizado = clima.address;
     lugar.textContent = `${lugarcapitalizado.charAt(0).toUpperCase() + lugarcapitalizado.slice(1)}`;
