@@ -97,8 +97,18 @@ function climaparte2() {
     const parte2 = document.createElement('div');
     parte2.classList.add('parte2');
     const titular2 = document.createElement('h2');
+    titular2.classList.add('titular2');
+    titular2.textContent = 'Pronostico Diario';
     const dias = document.createElement('div');
     dias.classList.add('dias');
+
+    for (let i = 1; i <= 7; i++) {
+        const semana = document.createElement('div');
+        semana.classList.add('dia');
+        semana.dataset.dia = `Dia${i}`;
+
+        dias.appendChild(semana);
+    }
 
     parte2.appendChild(titular2);
     parte2.appendChild(dias);
@@ -110,8 +120,18 @@ function climaparte3() {
     const parte3 = document.createElement('div');
     parte3.classList.add('parte3');
     const titular3 = document.createElement('h2');
+    titular3.classList.add('.titular3');
+    titular3.textContent = 'Pronostico por Horas';
     const horas = document.createElement('div');
     horas.classList.add('horas');
+
+    for (let i = 1; i <= 24; i++) {
+        const reloj = document.createElement('div');
+        reloj.classList.add('reloj');
+        reloj.dataset.hora = `Hora${i}`;
+
+        horas.appendChild(reloj);
+    }
 
     parte3.appendChild(titular3);
     parte3.appendChild(horas);
