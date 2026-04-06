@@ -1,6 +1,6 @@
 import { cargarIcono } from './display.js';
 
-async function llenargeneral(clima) {
+export async function llenargeneral(clima) {
     const iconobusqueda = document.querySelector('.iconobusqueda');
     iconobusqueda.src = await cargarIcono('search');
     const lugar = document.querySelector('.lugar');
@@ -80,7 +80,7 @@ export async function cambiarimagenes(imagen, valor) {
     }
 }
 
-async function llenardiario(clima) {
+export async function llenardiario(clima) {
     const totaldias = document.querySelectorAll('.dia');
     const nombresdias = [
         'Domingo',
