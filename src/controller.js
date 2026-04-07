@@ -96,8 +96,9 @@ export async function llenardiario(clima) {
         switch (elemento.dataset.dia) {
             case 'Dia1': {
                 const dia = document.createElement('h2');
-                const fecha = new Date(clima.days[0].datetime);
+                const fecha = new Date(clima.days[0].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
+                console.log(fecha.getDay());
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[0].icon;
                 cambiarimagenes(iconodia, cambioicono);
@@ -118,7 +119,7 @@ export async function llenardiario(clima) {
 
             case 'Dia2': {
                 const dia = document.createElement('h2');
-                const fecha = new Date(clima.days[1].datetime);
+                const fecha = new Date(clima.days[1].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[1].icon;
@@ -139,7 +140,7 @@ export async function llenardiario(clima) {
 
             case 'Dia3': {
                 const dia = document.createElement('h2');
-                const fecha = new Date(clima.days[2].datetime);
+                const fecha = new Date(clima.days[2].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[2].icon;
@@ -160,7 +161,7 @@ export async function llenardiario(clima) {
 
             case 'Dia4': {
                 const dia = document.createElement('h2');
-                const fecha = new Date(clima.days[3].datetime);
+                const fecha = new Date(clima.days[3].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[3].icon;
@@ -181,7 +182,7 @@ export async function llenardiario(clima) {
 
             case 'Dia5': {
                 const dia = document.createElement('h2');
-                const fecha = new Date(clima.days[4].datetime);
+                const fecha = new Date(clima.days[4].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[4].icon;
@@ -202,7 +203,7 @@ export async function llenardiario(clima) {
 
             case 'Dia6': {
                 const dia = document.createElement('h2');
-                const fecha = new Date(clima.days[5].datetime);
+                const fecha = new Date(clima.days[5].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[5].icon;
@@ -223,7 +224,7 @@ export async function llenardiario(clima) {
 
             case 'Dia7': {
                 const dia = document.createElement('h2');
-                const fecha = new Date(clima.days[6].datetime);
+                const fecha = new Date(clima.days[6].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[6].icon;
