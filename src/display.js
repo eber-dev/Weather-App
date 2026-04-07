@@ -84,8 +84,8 @@ function climaparte1() {
     titular.appendChild(lugar);
     parte1.appendChild(datogeneral);
     datogeneral.appendChild(datosclima);
-    datosclima.appendChild(estado);
     datosclima.appendChild(grados);
+    datosclima.appendChild(estado);
     datosclima.appendChild(sensacion);
     datosclima.appendChild(humedad);
     datosclima.appendChild(viento);
