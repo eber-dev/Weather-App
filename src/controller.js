@@ -98,7 +98,6 @@ export async function llenardiario(clima) {
                 const dia = document.createElement('h2');
                 const fecha = new Date(clima.days[0].datetime + 'T00:00:00');
                 dia.textContent = `${nombresdias[fecha.getDay()]}`;
-                console.log(fecha.getDay());
                 const iconodia = document.createElement('img');
                 let cambioicono = clima.days[0].icon;
                 cambiarimagenes(iconodia, cambioicono);
