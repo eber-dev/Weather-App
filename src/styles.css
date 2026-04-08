@@ -127,18 +127,21 @@ body {
 
 .dias {
     display: flex;
-    overflow-x: auto;
     gap: 1rem;
-    margin-inline: 1rem;
     margin-bottom: 1rem;
+    overflow-x: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .dia {
     border: 1px solid green;
     display: flex;
     flex-direction: column;
-    width: 15rem;
     align-items: center;
+    height: 13.7rem;
+    width: 9.5rem;
+    flex-shrink: 0;
 }
 
 .dia > h2 {
