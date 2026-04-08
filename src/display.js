@@ -100,7 +100,6 @@ function climaparte2() {
     parte2.classList.add('parte2');
     const titular2 = document.createElement('h2');
     titular2.classList.add('titular2');
-    titular2.textContent = 'Pronostico Diario';
     const dias = document.createElement('div');
     dias.classList.add('dias');
 
