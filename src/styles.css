@@ -37,13 +37,34 @@ body {
 .searchcontainer {
     display: flex;
     align-items: center;
-    border: 1px solid green;
     margin-right: 15%;
 }
 
 .searchcontainer > input {
-    height: 2rem;
-    font-size: 1.2rem;
+    height: 2.1rem;
+    font-size: 1.1rem;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchcontainer > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1rem;
+    border-left: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 0 10px 10px 0;
+    width: 3rem;
+}
+
+.searchcontainer > button:hover {
+    cursor: pointer;
 }
 
 .app {
@@ -147,13 +168,14 @@ body {
 }
 
 .dia {
-    border: 1px solid green;
+    border: 1px solid rgb(11, 182, 11);
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 13.7rem;
     width: 9.5rem;
     flex-shrink: 0;
+    border-radius: 20px;
 }
 
 .dia > h2 {
@@ -182,5 +204,5 @@ body {
 }
 
 .pie > p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
 }
