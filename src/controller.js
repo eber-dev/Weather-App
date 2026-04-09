@@ -15,23 +15,23 @@ export async function llenargeneral(clima) {
     let sensacionnumerico = Math.round(
         parseFloat(clima.currentConditions.feelslike),
     );
-    sensacion.textContent = `Sensacion Termica: ${sensacionnumerico}`;
+    sensacion.textContent = `Sensacion Termica: ${sensacionnumerico} °C`;
     const humedad = document.querySelector('.humedad');
     humedad.textContent = `Humedad: ${clima.currentConditions.humidity}%`;
     const viento = document.querySelector('.viento');
-    viento.textContent = `Viento: ${clima.currentConditions.windspeed}km/h`;
+    viento.textContent = `Viento: ${clima.currentConditions.windspeed} km/h`;
     const indice = document.querySelector('.indice');
     let indicecategorias = clima.currentConditions.uvindex;
     if (indicecategorias > 0 && indicecategorias <= 2) {
-        indice.textContent = 'Bajo';
+        indice.textContent = 'Indice UV: Bajo';
     } else if (indicecategorias > 2 && indicecategorias <= 5) {
-        indice.textContent = 'Moderado';
+        indice.textContent = 'Indice UV: Moderado';
     } else if (indicecategorias > 5 && indicecategorias <= 7) {
-        indice.textContent = 'Alto';
+        indice.textContent = 'Indice UV: Alto';
     } else if (indicecategorias > 7 && indicecategorias <= 10) {
-        indice.textContent = 'Muy Alto';
+        indice.textContent = 'Indice UV: Muy Alto';
     } else {
-        indice.textContent = 'Extremo';
+        indice.textContent = 'Indice UV: Extremo';
     }
 
     const imagenclima = document.querySelector('.imagenclima');
@@ -104,7 +104,7 @@ export async function llenardiario(clima) {
                 const rangodia = document.createElement('p');
                 let maximo = Math.round(parseFloat(clima.days[0].tempmax));
                 let minimo = Math.round(parseFloat(clima.days[0].tempmin));
-                rangodia.textContent = `${maximo}/${minimo}`;
+                rangodia.textContent = `${maximo}°C / ${minimo}°C`;
                 const estadodia = document.createElement('p');
                 estadodia.textContent = clima.days[0].conditions;
 
@@ -126,7 +126,7 @@ export async function llenardiario(clima) {
                 const rangodia = document.createElement('p');
                 let maximo = Math.round(parseFloat(clima.days[1].tempmax));
                 let minimo = Math.round(parseFloat(clima.days[1].tempmin));
-                rangodia.textContent = `${maximo}/${minimo}`;
+                rangodia.textContent = `${maximo}°C / ${minimo}°C`;
                 const estadodia = document.createElement('p');
                 estadodia.textContent = clima.days[1].conditions;
 
@@ -147,7 +147,7 @@ export async function llenardiario(clima) {
                 const rangodia = document.createElement('p');
                 let maximo = Math.round(parseFloat(clima.days[2].tempmax));
                 let minimo = Math.round(parseFloat(clima.days[2].tempmin));
-                rangodia.textContent = `${maximo}/${minimo}`;
+                rangodia.textContent = `${maximo}°C / ${minimo}°C`;
                 const estadodia = document.createElement('p');
                 estadodia.textContent = clima.days[2].conditions;
 
@@ -168,7 +168,7 @@ export async function llenardiario(clima) {
                 const rangodia = document.createElement('p');
                 let maximo = Math.round(parseFloat(clima.days[3].tempmax));
                 let minimo = Math.round(parseFloat(clima.days[3].tempmin));
-                rangodia.textContent = `${maximo}/${minimo}`;
+                rangodia.textContent = `${maximo}°C / ${minimo}°C`;
                 const estadodia = document.createElement('p');
                 estadodia.textContent = clima.days[3].conditions;
 
@@ -189,7 +189,7 @@ export async function llenardiario(clima) {
                 const rangodia = document.createElement('p');
                 let maximo = Math.round(parseFloat(clima.days[4].tempmax));
                 let minimo = Math.round(parseFloat(clima.days[4].tempmin));
-                rangodia.textContent = `${maximo}/${minimo}`;
+                rangodia.textContent = `${maximo}°C / ${minimo}°C`;
                 const estadodia = document.createElement('p');
                 estadodia.textContent = clima.days[4].conditions;
 
@@ -210,7 +210,7 @@ export async function llenardiario(clima) {
                 const rangodia = document.createElement('p');
                 let maximo = Math.round(parseFloat(clima.days[5].tempmax));
                 let minimo = Math.round(parseFloat(clima.days[5].tempmin));
-                rangodia.textContent = `${maximo}/${minimo}`;
+                rangodia.textContent = `${maximo}°C / ${minimo}°C`;
                 const estadodia = document.createElement('p');
                 estadodia.textContent = clima.days[5].conditions;
 
@@ -231,7 +231,7 @@ export async function llenardiario(clima) {
                 const rangodia = document.createElement('p');
                 let maximo = Math.round(parseFloat(clima.days[6].tempmax));
                 let minimo = Math.round(parseFloat(clima.days[6].tempmin));
-                rangodia.textContent = `${maximo}/${minimo}`;
+                rangodia.textContent = `${maximo}°C / ${minimo}°C`;
                 const estadodia = document.createElement('p');
                 estadodia.textContent = clima.days[6].conditions;
 
