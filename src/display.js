@@ -24,7 +24,7 @@ async function seccion1() {
     const input = document.createElement('input');
     input.id = 'entrada';
     input.type = 'text';
-    input.placeholder = 'Cuidad a consultar';
+    input.placeholder = 'Ciudad a consultar';
     const buscar = document.createElement('button');
     buscar.classList.add('busqueda');
     const buscarimagen = document.createElement('img');

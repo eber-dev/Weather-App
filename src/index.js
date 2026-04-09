@@ -32,6 +32,7 @@ busqueda.addEventListener('click', async () => {
 
     if (consulta === '') {
         alert('Debe ingresar una ciudad');
+        llenardiario(climainicial);
         return;
     }
 
